@@ -1,7 +1,7 @@
 {
-  "name": "lco-graphql",
+  "name": "blog-graphql",
   "version": "1.0.0",
-  "description": "a standard babel setup",
+  "description": "Graphql Demo",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./index.js --exec babel-node -e js"
@@ -10,7 +10,7 @@
     "babel",
     "es6"
   ],
-  "author": "hitesh choudhary",
+  "author": "Fitsum Alemu",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
