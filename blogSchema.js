@@ -46,7 +46,7 @@ var blogSchema = buildSchema(`
     getBlog(id: ID): Blog
   }
 
-  type mutation{
+  type Mutation{
     createBlog(input: BlogInput):Blog
   }
 
