@@ -10,6 +10,7 @@ class Blog {
         language,
         author
     }) {
+        this.id = id
         this.title = title
         this.body = body
         this.category = category
