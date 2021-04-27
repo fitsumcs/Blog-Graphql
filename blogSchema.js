@@ -34,7 +34,7 @@ var blogSchema = buildSchema(`
     body: String
     category: BlogType!
     language: String
-    author: [Author]!
+    author: [AuthorInput]!
   }
   input AuthorInput{
     firstName: String!
