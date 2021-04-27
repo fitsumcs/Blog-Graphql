@@ -1,4 +1,4 @@
-import {buildSchema} from 'graphql';
+import { buildSchema } from 'graphql';
 
 
 var blogSchema = buildSchema(`
@@ -28,6 +28,27 @@ var blogSchema = buildSchema(`
   }
 
 
+  input BlogInput{
+    id: ID
+    title: String!
+    body: String
+    category: BlogType!
+    language: String
+    author: [Author]!
+  }
+  input AuthorInput{
+    firstName: String!
+    lastName: String!
+    email: String!
+  }
+
+  type Query {
+    getBlog(id: ID): Blog
+  }
+
+  type mutation{
+    createBlog(input: BlogInput):Blog
+  }
 
 
 
