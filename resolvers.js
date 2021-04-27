@@ -17,3 +17,19 @@ class Blog {
         this.author = author
     }
 }
+
+const blogList = {}
+
+
+const resolvers = {
+
+    getBlog: ({ id }) => {
+        return new Blog(id, blogList[id])
+    },
+    createBlog: ({ input }) => {
+        let id = nanoid()
+        blogList[id] = input
+        return new Blog(id, input)
+    }
+
+}
