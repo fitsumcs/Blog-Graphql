@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 })
 
 
-var root = { hello: () => 'Hello world!' };
+var root = resolvers;
 
 
 app.use("/graphql", graphqlHTTP({
